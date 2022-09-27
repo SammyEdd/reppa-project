@@ -1,0 +1,16 @@
+.blueprint-container {
+    height         : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    .blueprint {
+        width   : calc(1026px / 1.5);
+        height  : calc(1132 / 1.5);
+        position: relative;
+
+        &__image {
+            width: 100%;
+        }
+    }
+}
