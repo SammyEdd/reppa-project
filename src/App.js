@@ -7,6 +7,7 @@ import './App.css';
 
 export const App = () => {
   const [selectedFilters, setSelectedFilters] = useState([]);
+  
   return (
     <div className="App">
       <Filters selectedFilters={selectedFilters} setSelectedFilters={(filters) => setSelectedFilters(filters)} />

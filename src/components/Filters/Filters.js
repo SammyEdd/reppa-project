@@ -37,7 +37,6 @@ export const Filters = ({ selectedFilters, setSelectedFilters }) => {
     return (
         <div className='filter' >
             <button
-                className="filter__all"
                 onClick={() => handleAllClick()}
                 style={allButtonStyle}
             >
