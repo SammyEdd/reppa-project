@@ -1,13 +1,16 @@
-import './App.css';
+import { useState } from 'react';
+
 import { Blueprint } from './components/Blueprint/Blueprint';
-import { useFlags } from './hooks/useFlags';
+import { Filters } from './components/Filters/Filters';
+
+import './App.css';
 
 export const App = () => {
-  const [flags] = useFlags();
-  console.log(flags)
+  const [selectedFilters, setSelectedFilters] = useState([]);
   return (
     <div className="App">
-      <Blueprint flags={flags} />
+      <Filters selectedFilters={selectedFilters} setSelectedFilters={(filters) => setSelectedFilters(filters)} />
+      <Blueprint selectedFilters={selectedFilters} />
     </div>
   );
 }

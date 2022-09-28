@@ -6,14 +6,25 @@
     align-items    : center;
     justify-content: center;
 
+    -webkit-touch-callout: none;
+    -webkit-user-select  : none;
+    -khtml-user-select   : none;
+    -moz-user-select     : none;
+    -ms-user-select      : none;
+    user-select          : none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
     &::after {
         content      : " ";
         position     : absolute;
         border-top   : 0px solid transparent;
         border-bottom: 20px solid transparent;
-        right       : 100%;
-        top: 0;
-        border-right: 10px solid black;
+        right        : 100%;
+        top          : 0;
+        border-right : 10px solid black;
     }
 
 }
